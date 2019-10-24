@@ -27,6 +27,7 @@ data['x1'].describe()  ###statistics similary of others
 
 data.dtypes  ## datatypes
 
+from sklearn.model_selection import train_test_split
 train,test=train_test_split(diab,test_size=0.25,random_state=0,stratify=diab['Outcome'])# stratify the outcome
 train_X=train[train.columns[:8]]
 test_X=test[test.columns[:8]]
